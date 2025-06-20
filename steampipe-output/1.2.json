@@ -1,0 +1,13 @@
+{
+  "check_id": "1.2",
+  "resource": "aws_iam_account_password_policy",
+  "evidence": {
+    "password_policy": {
+      "minimum_length": 12,
+      "require_symbols": true,
+      "require_numbers": true,
+      "require_uppercase_characters": true,
+      "require_lowercase_characters": true
+    }
+  }
+}

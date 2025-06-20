@@ -1,0 +1,7 @@
+{
+  "check_id": "4.1",
+  "resource": "sg-123456789",
+  "evidence": {
+    "contains_ssh_open_to_world": false
+  }
+}

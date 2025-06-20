@@ -1,0 +1,7 @@
+{
+  "check_id": "2.1",
+  "resource": "cloudtrail_global",
+  "evidence": {
+    "cloudtrail_enabled_in_all_regions": true
+  }
+}

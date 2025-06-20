@@ -1,0 +1,7 @@
+{
+  "check_id": "1.1",
+  "resource": "aws_account_root",
+  "evidence": {
+    "root_account_mfa_enabled": false
+  }
+}

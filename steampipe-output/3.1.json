@@ -1,0 +1,10 @@
+{
+  "check_id": "3.1",
+  "resource": "s3_bucket_xyz",
+  "evidence": {
+    "public_access_block": {
+      "block_public_acls": true,
+      "block_public_policy": true
+    }
+  }
+}
