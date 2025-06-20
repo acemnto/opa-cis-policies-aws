@@ -1,0 +1,28 @@
+name: Validate Rego Policies
+
+on:
+  push:
+    paths:
+      - '**.rego'
+      - '**.go'
+      - 'steampipe-output/**'
+  pull_request:
+
+jobs:
+  opa-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Set up OPA
+        uses: open-policy-agent/setup-opa@v2
+        with:
+          version: latest
+
+      - name: Run Policy Evaluation
+        run: go run main.go
